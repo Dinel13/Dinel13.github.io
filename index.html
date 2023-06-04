@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Salahuddin</title>
+    <meta name="description" content="Salahuddin Personal website as Software Engineer" />
+    <meta property="og:title" content="Salahuddin Personal website as Software Engineer"/>
+    <meta property="og:description" content="Salahuddin Personal website as Software Engineer" />
+    <style>
+      .flex {
+        display: flex;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .bg-gray-400 {
+        background-color: #e7ecee;
+      }
+
+      .page-wrap {
+        max-width: 52rem /* 768px */;
+        padding: 10px;
+      }
+
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .flex-col {
+        flex-direction: column;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .my-main {
+        margin-top: 8rem /* 128px */;
+        margin-bottom: 8rem /* 128px */;
+      }
+
+      @media (min-width: 1024px) {
+        .my-main {
+          margin-top: 12rem /* 192px */;
+          margin-bottom: 12rem /* 192px */;
+        }
+      }
+
+      .image-wrap {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 11rem;
+        height: 11rem;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .image-profile {
+        width: 12rem;
+        opacity: 0.85;
+        transform: translateY(3%);
+        transform: translateX(-3%);
+      }
+
+      .header-button {
+        text-decoration: none;
+        color: #5f6161;
+        background-color: #ffffff;
+        padding: 6px 12px;
+        border: 1px solid #d2d5d5;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-400">
+    <div class="page-wrap mx-auto">
+      <header class="flex justify-between">
+        <a
+          href="https://github.com/Dinel13/Dinel13.github.io"
+          class="header-button"
+          target="_blank"
+          >View sourecode</a
+        >
+        <a
+          href="resume.pdf"
+          download="resume-salahuddin.pdf"
+          class="header-button"
+          >Get my CV</a
+        >
+      </header>
+      <main class="flex flex-col items-center my-main">
+        <div class="image-wrap">
+          <img src="me.jpeg" alt="Your Image" class="image-profile" />
+        </div>
+        <h1
+          style="
+            margin: 26px 0 0 0;
+            font-size: 1.35rem;
+            letter-spacing: 0.05em;
+            color: #5a5c5c;
+          "
+        >
+          Salahuddin
+        </h1>
+        <h2
+          style="
+            margin: 14px 0 0 0;
+            font-size: 3.25rem;
+            letter-spacing: 0.05em;
+            color: #414242;
+            font-weight: 200;
+          "
+        >
+          Software Engineer
+        </h2>
+        <p
+          style="
+            margin: 10px 0 0 0;
+            font-size: 1rem;
+            color: #6a6c6c;
+            font-weight: 200;
+          "
+        >
+          I am passionate about software engineering. Love to build something
+          big by piecing together small components
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
