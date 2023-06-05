@@ -30,7 +30,7 @@
       }
 
       .bg-gray-400 {
-        background-color: #e7ecee;
+        background-color: #f2f5f6;
       }
 
       .page-wrap {
@@ -74,10 +74,10 @@
 
       .header-button {
         text-decoration: none;
-        color: #8e9090;
-        background-color: #ffffff;
+        color: #838585;
+        background-color: #fffffe;
         padding: 6px 12px;
-        border: 1px solid #d2d5d5;
+        border: 1px solid #d9dcdc;
         border-radius: 5px;
         font-size: 0.94rem;
       }
@@ -90,6 +90,35 @@
         font-weight: 200;
       }
 
+      .card-focus {
+        padding: 24px;
+        background-color: #f8fbfc;
+        border-radius: 10px;
+        width: 16rem;
+        flex-grow: 1;
+      }
+
+      .card-focus-img {
+        padding: 14px;
+        background-color: #f2f5f6;
+        border-radius: 5px;
+        display: inline;
+      }
+
+      .card-focus-title {
+        color: #565757;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin: 13px 0 8px 0;
+      }
+
+      .card-focus-body {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #7d7f7f;
+      }
+
       @media (min-width: 624px) {
         .text-software {
           margin: 14px 0 0 0;
@@ -99,8 +128,8 @@
 
       @media (min-width: 1024px) {
         .my-main {
-          margin-top: 12rem /* 192px */;
-          margin-bottom: 12rem /* 192px */;
+          margin-top: 12rem;
+          margin-bottom: 12rem;
         }
 
         .text-software {
@@ -152,7 +181,55 @@
           big by piecing together small components
         </p>
       </main>
-      <section class="flex flex-col items-center my-main"></section>
+      <section class="flex my-main" style="flex-wrap: wrap; gap: 26px">
+        <div class="card-focus">
+          <img src="be.svg" alt="logo" width="20" class="card-focus-img" />
+          <p class="card-focus-title">Backend Development</p>
+          <p class="card-focus-body">
+            Leverage the power of Golang, Java with Spring Boot, and other
+            cutting-edge tools to construct a highly scalable Backend system.
+          </p>
+        </div>
+        <div class="card-focus">
+          <img src="fe.svg" alt="logo" width="20" class="card-focus-img" />
+          <p class="card-focus-title">frontend Development</p>
+          <p class="card-focus-body">
+            Utilize JavaScript with React.js, Next.js, and various other tools
+            to create a user-friendly frontend interface.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h3
+          style="
+            margin: 20px;
+            font-size: 1.35rem;
+            letter-spacing: 0.05em;
+            color: #5a5c5c;
+            text-align: center;
+          "
+        >
+          Github Actifity
+        </h3>
+        <div
+          class="mx-auto"
+          style="
+            padding: 10px;
+            background-color: #fdfbfb;
+            max-width: max-content;
+            border-radius: 10px;
+          "
+        >
+          <img
+            src="https://ghchart.rshah.org/dinel13"
+            alt="2016rshah's Github chart"
+          />
+        </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>
